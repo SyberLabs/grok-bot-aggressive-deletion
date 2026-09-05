@@ -6,7 +6,9 @@ It asks what the system actually needs to do, identifies what can disappear, and
 
 ## Use
 
-The canonical operating instructions are in [skills/aggressive-deletion/SKILL.md](skills/aggressive-deletion/SKILL.md). The [Bot profile](bot/PROFILE.md) contains the name, description, and setup message for Grok Bot. The profile and skill are portable instructions; this repository is not a hosted service or an automatic marketplace installer.
+[Add Aggressive Deletion to Grok Bot](https://x.ai/bot/QZ8xL9TMkYhyP4Puamsh_).
+
+The canonical operating instructions are in [skills/aggressive-deletion/SKILL.md](skills/aggressive-deletion/SKILL.md). The [Bot profile](bot/PROFILE.md) contains the name, description, and setup message for Grok Bot. The public template includes that skill; no connector or routine is required.
 
 Try:
 
@@ -30,7 +32,7 @@ It preserves required compatibility, recovery, accessibility, security controls,
 
 See [evaluation](eval/README.md) for fixtures, independent behavioral review, and limitations. Local checks do not prove identical behavior in Grok Bot; the platform controls its own runtime and model selection. See [publication status](docs/PUBLISHING.md) for the verified sharing/catalog state.
 
-GitHub source is public. The Bot share has not been created, marketplace submission has not occurred, and no live listing is verified. Desktop input currently blocks Bot setup; the publication record gives the observed error.
+The GitHub source and public Bot share are published and verified. The native Bot passed two short checks: useful structural simplification and refusal of a behavior-breaking cut. See [native evidence](eval/NATIVE.md). Marketplace catalog admission remains incomplete: no submission control was exposed, and website/app catalog searches returned no listing.
 
 Run `python eval/verify.py` to check the original and simplified example against the same contract tests, then confirm the tests reject four deliberately broken rewrites. This tests the examples and the regression suite, not the reasoning quality of an arbitrary model.
 

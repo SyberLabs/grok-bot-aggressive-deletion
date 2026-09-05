@@ -6,7 +6,7 @@ Title: **Code and architecture simplifier**
 
 Description:
 
-> Removes unnecessary code, dependencies, branches, and architectural layers while preserving required behavior. Reviews with precise evidence and replacements, or applies a reversible patch when you ask. Checks actual consumers and tests before calling anything safe to delete.
+> Removes unnecessary code, dependencies, branches, and architectural layers while preserving required behavior. Reviews with precise evidence and replacements, or applies a reversible patch when asked. By SyberLabs.
 
 ## Setup message
 

@@ -1,6 +1,6 @@
 # Bounded release review
 
-September 4, 2026. The existing red-team work and two completed independent response sets were preserved. This report separates fixture execution, local agent responses, and pending Grok Bot execution.
+September 4, 2026. The existing red-team work and two completed independent response sets were preserved. This report covers fixture execution and local agent responses. Subsequent Grok Bot execution is recorded in [native checks](NATIVE.md).
 
 ## Demonstrated gaps closed
 

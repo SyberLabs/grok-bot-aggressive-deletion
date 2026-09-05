@@ -19,4 +19,6 @@ A second pass can use review-only mode on an unchanged fixture to check that fin
 
 The structural check reproduces a flaw in the saved review proposal and checks a corrected single-loop replacement against the exact versioned scenario. See [current red-team results](RED-TEAM.md) for the six response judgments and limitations.
 
+The published Bot was also exercised in Grok Bot itself. See [native checks](NATIVE.md) for verified installation, two observed responses, and the operator's subsequent differential checks.
+
 Passing local tests shows behavior on these examples, not universal correctness or measured Grok Bot performance. Record agent outcomes and any skill corrections in `RESULTS.md`. Generated agent workspaces remain untracked.
