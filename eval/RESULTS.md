@@ -1,6 +1,6 @@
 # Evaluation results
 
-September 4, 2026. Two independent Codex agents tested the canonical skill on the synthetic fixture. These are local forward tests, not Grok Bot runtime benchmarks.
+September 4, 2026. This file preserves the initial four-test evaluation below. The subsequent [bounded red-team review](RED-TEAM.md) records the current 13-test suite, four rejected regressions, six graded written responses, and 4,923 structural comparisons. These are local checks, not Grok Bot runtime benchmarks.
 
 ## Review-only pass
 
@@ -20,4 +20,4 @@ The system skill validator passed. The validator dependency was installed only i
 
 ## Limits
 
-No measured claim about broader codebases, real user outcomes, model superiority, marketplace demand, or Grok Bot performance follows from this small test. No serious skill defect surfaced in these cases. Unknown external consumers and incomplete test suites remain reasons to narrow a claim or request decisive evidence.
+No measured claim about broader codebases, real user outcomes, model superiority, marketplace demand, or Grok Bot performance follows from this small test. The later red-team pass exposed coverage gaps and a custom-equality flaw in a separate structural proposal; see the current review above. Unknown external consumers and incomplete test suites remain reasons to narrow a claim or request decisive evidence.

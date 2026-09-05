@@ -2,7 +2,7 @@
 
 A focused Grok Bot template from SyberLabs for removing unnecessary code, dependencies, branches, and architectural layers while preserving required behavior.
 
-It asks what the system actually needs to do, identifies what can disappear, and produces a concise review or a verified patch when edits are requested. It does not optimize for a deletion quota.
+It asks what the system actually needs to do, identifies what can disappear, and produces a concise review or a local patch when edits are requested. It reports the checks actually run and marks missing validation. It does not optimize for a deletion quota.
 
 ## Use
 
@@ -29,6 +29,12 @@ It preserves required compatibility, recovery, accessibility, security controls,
 ## Evidence and release status
 
 See [evaluation](eval/README.md) for fixtures, independent behavioral review, and limitations. Local checks do not prove identical behavior in Grok Bot; the platform controls its own runtime and model selection. See [publication status](docs/PUBLISHING.md) for the verified sharing/catalog state.
+
+GitHub source is public. The Bot share has not been created, marketplace submission has not occurred, and no live listing is verified. Desktop input currently blocks Bot setup; the publication record gives the observed error.
+
+Run `python eval/verify.py` to check the original and simplified example against the same contract tests, then confirm the tests reject four deliberately broken rewrites. This tests the examples and the regression suite, not the reasoning quality of an arbitrary model.
+
+Run `python eval/check_structure.py` for the structural counterexample and corrected replacement. The [bounded review](eval/RED-TEAM.md) records the six written-response judgments and actual limitations.
 
 ## Background
 
