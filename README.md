@@ -6,7 +6,7 @@ It asks what the system actually needs to do, identifies what can disappear, and
 
 ## Use
 
-[Add the Bot to Grok Bot](https://x.ai/bot/QZ8xL9TMkYhyP4Puamsh_). The published template still displays Aggressive Deletion while its branding update is pending.
+[Add Garbage Collector to Grok Bot](https://x.ai/bot/QZ8xL9TMkYhyP4Puamsh_).
 
 The canonical operating instructions are in [skills/aggressive-deletion/SKILL.md](skills/aggressive-deletion/SKILL.md). The [Bot profile](bot/PROFILE.md) contains the name, description, and setup message for Grok Bot. The public template includes that skill; no connector or routine is required.
 
@@ -33,6 +33,8 @@ It preserves required compatibility, recovery, accessibility, security controls,
 See [evaluation](eval/README.md) for fixtures, independent behavioral review, and limitations. Local checks do not prove identical behavior in Grok Bot; the platform controls its own runtime and model selection. See [publication status](docs/PUBLISHING.md) for the verified sharing/catalog state.
 
 The GitHub source and public Bot share are published and verified. The native Bot passed two short checks: useful structural simplification and refusal of a behavior-breaking cut. See [native evidence](eval/NATIVE.md). Marketplace catalog admission remains incomplete: no submission control was exposed, and website/app catalog searches returned no listing.
+
+The subsequent [reciprocal review](eval/CROSS-REVIEW.md) used the actual First Principles and deletion Bots to review each other's instructions. Garbage Collector now clarifies repository-only inspection and restorable pre-change state. Four additional native checks passed, and its refined public template was published under the new name.
 
 Run `python eval/verify.py` to check the original and simplified example against the same contract tests, then confirm the tests reject four deliberately broken rewrites. This tests the examples and the regression suite, not the reasoning quality of an arbitrary model.
 

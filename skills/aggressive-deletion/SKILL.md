@@ -3,13 +3,13 @@ name: aggressive-deletion
 description: Find and remove unnecessary code, dependencies, configuration, and architectural layers while preserving required behavior. Use for deletion-focused code review or requested structural simplification; keep general bug fixing, product ideation, and unrelated redesign outside the task.
 ---
 
-# Aggressive Deletion
+# Garbage Collector
 
 Reduce the concepts and moving parts needed to deliver the required behavior. Be ambitious about what can disappear and precise about why it is safe. Code moved into another file is not necessarily less complex. Fewer lines are evidence of size, not proof of quality.
 
 ## Establish the boundary
 
-Use the user's named diff, files, or workflow as the starting scope. Read applicable repository instructions and inspect staged and unstaged changes before editing. Preserve unrelated work. For a review request, report findings without source edits. For an implementation request, make authorized reversible local changes without asking again for routine steps; pushing, publishing, deleting remote data, and changing access remain separate actions unless authorized. If user edits overlap your target, preserve them in the patch; never use blanket reset, checkout, clean, or stash as a rollback.
+Use the user's named diff, files, or workflow as the starting scope. When working in a repository, read applicable repository instructions; before editing it, inspect staged and unstaged changes. Preserve unrelated work. For a review request, report findings without source edits. For an implementation request, make authorized reversible local changes without asking again for routine steps; pushing, publishing, deleting remote data, and changing access remain separate actions unless authorized. If user edits overlap your target, preserve them in the patch; never use blanket reset, checkout, clean, or stash as a rollback.
 
 Start from the supplied material. With a snippet or partial diff, give useful local findings and state what cannot be established about the rest of the system; do not require a repository, connector, named owner, or full interview to begin. Ask only when missing evidence can change the proposed cut. For a broad repository audit, follow the highest-value candidate through its dependency boundary before widening the search. Do not exhaustively inventory the repository before giving a useful result.
 
@@ -41,7 +41,7 @@ Make high-confidence findings only when the removed responsibility is unnecessar
 
 ## Apply only within the requested scope
 
-When edits are requested, establish a recoverable baseline, make the smallest complete simplification, and update callers and dependency metadata together. Do not mix unrelated refactoring. Use meaningful existing tests; add a small behavior test when the changed contract lacks coverage. Keep useful smoke tests and edge-case checks. Do not weaken assertions, delete failing tests, or rewrite expected outputs merely to make a simplification pass. A requested behavior change must be identified separately from a behavior-preserving cut. If the baseline already fails, record that before claiming the change caused or fixed it.
+When edits are requested, establish restorable pre-change state for affected files, including existing user edits, for example by copying them aside; a hash alone cannot restore content. Make the smallest complete simplification and update callers and dependency metadata together. Do not mix unrelated refactoring. Use meaningful existing tests; add a small behavior test when the changed contract lacks coverage. Keep useful smoke tests and edge-case checks. Do not weaken assertions, delete failing tests, or rewrite expected outputs merely to make a simplification pass. A requested behavior change must be identified separately from a behavior-preserving cut. If the baseline already fails, record that before claiming the change caused or fixed it.
 
 Tests, imports, package scripts, and build hooks execute code and can write files or contact services. Inspect unfamiliar test entry points and setup before running them; use an isolated copy without production credentials when side effects are uncertain, or report the checks unrun. A copied directory alone is not a security sandbox. Running tests is not permission for external writes. Preserve a stable source snapshot so the reviewed artifact is the artifact validated.
 
