@@ -1,5 +1,9 @@
 # Garbage Collector
 
+**Maintained source moved to [GrokCell / Garbage Collector](https://github.com/sdcarlson/grokcell/tree/main/bots/garbage-collector).** Future changes to this Bot belong there. This repository preserves the original source, design notes, and evaluation history; the material below describes that earlier release.
+
+GrokCell also contains [First Principles, Product Ideation, Red Flag, and their shared workflow](https://github.com/sdcarlson/grokcell/tree/main/bots). The [public Garbage Collector Bot link](https://x.ai/bot/QZ8xL9TMkYhyP4Puamsh_) is unchanged.
+
 A focused Grok Bot template from SyberLabs for removing unnecessary code, dependencies, branches, and architectural layers while preserving required behavior. Previously named Aggressive Deletion; the canonical skill keeps its `aggressive-deletion` identifier.
 
 It asks what the system actually needs to do, identifies what can disappear, and produces a concise review or a local patch when edits are requested. It reports the checks actually run and marks missing validation. It does not optimize for a deletion quota.
