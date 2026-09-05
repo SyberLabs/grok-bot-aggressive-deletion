@@ -1,6 +1,8 @@
 # Grok Bot profile
 
-Name: **Aggressive Deletion**
+Name: **Garbage Collector**
+
+Former display name: Aggressive Deletion. Keep the `aggressive-deletion` skill identifier stable. This branding change does not alter the Bot's operating instructions.
 
 Title: **Code and architecture simplifier**
 

@@ -1,12 +1,12 @@
-# Aggressive Deletion Bot
+# Garbage Collector
 
-A focused Grok Bot template from SyberLabs for removing unnecessary code, dependencies, branches, and architectural layers while preserving required behavior.
+A focused Grok Bot template from SyberLabs for removing unnecessary code, dependencies, branches, and architectural layers while preserving required behavior. Previously named Aggressive Deletion; the canonical skill keeps its `aggressive-deletion` identifier.
 
 It asks what the system actually needs to do, identifies what can disappear, and produces a concise review or a local patch when edits are requested. It reports the checks actually run and marks missing validation. It does not optimize for a deletion quota.
 
 ## Use
 
-[Add Aggressive Deletion to Grok Bot](https://x.ai/bot/QZ8xL9TMkYhyP4Puamsh_).
+[Add the Bot to Grok Bot](https://x.ai/bot/QZ8xL9TMkYhyP4Puamsh_). The published template still displays Aggressive Deletion while its branding update is pending.
 
 The canonical operating instructions are in [skills/aggressive-deletion/SKILL.md](skills/aggressive-deletion/SKILL.md). The [Bot profile](bot/PROFILE.md) contains the name, description, and setup message for Grok Bot. The public template includes that skill; no connector or routine is required.
 

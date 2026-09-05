@@ -2,6 +2,8 @@
 
 Verified September 4, 2026, America/Los_Angeles. Public sharing and marketplace admission are separate milestones.
 
+Branding update: the intended product name is now **Garbage Collector**. The repository profile has been updated; the native Bot and public template rename are not yet verified. The existing published share below currently uses Aggressive Deletion. The canonical skill and prior behavioral evidence are unchanged.
+
 - GitHub repository: [SyberLabs/grok-bot-aggressive-deletion](https://github.com/SyberLabs/grok-bot-aggressive-deletion), public; source, research, profile, skill, and local evaluation evidence uploaded to `main`.
 - Dedicated Grok Bot: **created and configured**, named Aggressive Deletion, label Code and architecture simplifier.
 - Canonical skill: **saved and selected in the native Bot**. The full Markdown body was compared in the editor to release `a87522a`; the embedded template skill also matched after normalizing displayed whitespace. Grok Bot serializes YAML metadata separately, so this is not a claim that the packaged file bytes are identical.
