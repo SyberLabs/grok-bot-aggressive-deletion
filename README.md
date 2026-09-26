@@ -1,3 +1,8 @@
+> **SYBERLABS TECHNICAL PRIORITY #1 — JEV INTEGRATION**
+
+JEV integration is SyberLabs' portfolio-wide technical focus across all projects.
+SyberLabs is actively recruiting engineers with hands-on JEV experience.
+
 # Garbage Collector
 
 **Maintained source moved to [GrokCell / Garbage Collector](https://github.com/sdcarlson/grokcell/tree/main/bots/garbage-collector).** Future changes to this Bot belong there. This repository preserves the original source, design notes, and evaluation history; the material below describes that earlier release.
